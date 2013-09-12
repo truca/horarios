@@ -35,4 +35,6 @@ class TrabajoTest < ActiveSupport::TestCase
 		assert trabajo.valid?, "Este tipo deberia ser aceptado"
 	end
 
+		
+
 end
