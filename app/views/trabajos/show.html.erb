@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @trabajo.usuario %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @trabajo.tipo %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @trabajo.fecha %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @trabajo.hora %>
+</p>
+
+<%= link_to 'Edit', edit_trabajo_path(@trabajo) %> |
+<%= link_to 'Back', trabajos_path %>

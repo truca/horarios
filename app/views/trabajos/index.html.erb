@@ -1,0 +1,33 @@
+<h1>Listing trabajos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Tipo</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trabajos.each do |trabajo| %>
+      <tr>
+        <td><%= trabajo.usuario %></td>
+        <td><%= trabajo.tipo %></td>
+        <td><%= trabajo.fecha %></td>
+        <td><%= trabajo.hora %></td>
+        <td><%= link_to 'Show', trabajo %></td>
+        <td><%= link_to 'Edit', edit_trabajo_path(trabajo) %></td>
+        <td><%= link_to 'Destroy', trabajo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trabajo', new_trabajo_path %>
