@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  usuario: MyString
+  usuario: 1
   tipo: MyString
   fecha: 2013-09-12
   hora: MyString
 
 two:
-  usuario: MyString
+  usuario: 1
   tipo: MyString
   fecha: 2013-09-12
   hora: MyString

@@ -5,10 +5,10 @@ class TrabajosControllerTest < ActionController::TestCase
   setup do
     @trabajo = trabajos(:one)
     @update = {
-	usuario: 'Lorem Ipsum',
-	tipo:    'entrada',
-	fecha:   Date.new(2001,2,3),
-	hora:    '19:30'
+	     usuario: 1,
+	     tipo:    'entrada',
+	     fecha:   Date.new(2001,2,3),
+	     hora:    '19:30'
     }
   end
 

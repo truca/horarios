@@ -1,4 +1,6 @@
 Horarios::Application.routes.draw do
+  resources :usuarios
+
   get "checkout/index"
   resources :trabajos
 

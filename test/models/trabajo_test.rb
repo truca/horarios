@@ -15,11 +15,11 @@ class TrabajoTest < ActiveSupport::TestCase
 		
 		trabajo.hora = "9:20"
 		assert trabajo.invalid?
-		asset_equal "debe ser una hora valida (ej: 16:30, 09:25).", product.errors[:hora].join('; ')
+		assert_equal "debe ser una hora valida (ej: 16:30, 09:25).", trabajo.errors[:hora].join('; ')
 
 		trabajo.hora = "05:00pm"
 		assert trabajo.invalid?
-		asset_equal "debe ser una hora valida (ej: 16:30, 09:25).", product.errors[:hora].join('; ')
+		assert_equal "debe ser una hora valida (ej: 16:30, 09:25).", trabajo.errors[:hora].join('; ')
 
 		trabajo.hora = "19:30"
 		assert trabajo.valid?
