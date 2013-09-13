@@ -1,0 +1,17 @@
+<h1>Checkout</h1>
+
+<% @usuarioAnterior = -1 %>
+<% @trabajos.each do |trabajo| %>
+<div class="entry">
+	<%if trabajo.usuario != @usuarioAnterior%>
+		<h3><%= trabajo.usuario %></h3>
+	<% end %>
+	<div class="price_line">
+		<span class="price"><%= trabajo.tipo %></span>
+		<span class="price"><%= trabajo.fecha %></span>
+		<span class="price"><%= trabajo.hora %></span>
+	</div>
+	<% @usuarioAnterior = trabajo.usuario %>
+</div>
+<% end %>
+

@@ -1,0 +1,15 @@
+HECHO
+
+se creo la tabla para almacenar los eventos
+se validaron las entradas
+se genero un controlador-vista para ver los eventos de cada persona
+se genero un repositorio en github y se conecto con la carpeta (git add . | git push github master) 
+
+FALTA:
+
+-separar las personas de los eventos y relacionarlos
+-log-in para personas
+-presentacion mas apta
+-hacer un controlador-vista para ingresar los valores
+
+-automatizar un poco el proceso

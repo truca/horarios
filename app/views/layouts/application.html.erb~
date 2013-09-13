@@ -15,7 +15,7 @@
 			<div id="side">
 				<ul>
 					<li><a href="http://www....">Home</a></li>
-					<li><% link_to "Generar entrada", :controller => 'trabajos', :action => 'index' %></li>
+					<li><% link_to "Generar entrada", :controller => 'trabajo', :action => 'index' %></li>
 				</ul>
 			</div>
 			<div id="main">
